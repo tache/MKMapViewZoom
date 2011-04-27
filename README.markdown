@@ -20,8 +20,13 @@ map.setCenter(new google.maps.LatLng(37.4419, -122.1419), 13);
 
 
 
-# Note
 
+
+
+# Note
+To get the current zoom level 
+
+	int level = [mapView zoomLevel];
 
 
 # Questions
