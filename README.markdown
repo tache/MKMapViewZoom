@@ -7,8 +7,7 @@ If you have ever built a web application using the Google Maps API, you are like
 map.setCenter(new google.maps.LatLng(37.4419, -122.1419), 13);
 To implement this you can use the attached category. 
 
-In your view controller where you declare MKMapView simply add
-#import "MKMapView+ZoomLevel.h" 
+In your view controller where you declare MKMapView simply import "MKMapView+ZoomLevel.h" 
 
 
 # Example
