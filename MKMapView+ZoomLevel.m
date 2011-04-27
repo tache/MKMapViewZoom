@@ -86,4 +86,20 @@
     [self setRegion:region animated:animated];
 }
 
+
+- (NSUInteger) zoomLevel {
+    MKCoordinateRegion region = self.region;
+    
+    double centerPixelX = [self longitudeToPixelSpaceX: region.center.longitude];
+    double topLeftPixelX = [self longitudeToPixelSpaceX: region.center.longitude - region.span.longitudeDelta / 2];
+    
+    double scaledMapWidth = (centerPixelX - topLeftPixelX) * 2;
+    CGSize mapSizeInPixels = self.bounds.size;
+    double zoomScale = scaledMapWidth / mapSizeInPixels.width;
+    double zoomExponent = log(zoomScale) / log(2);
+    double zoomLevel = 20 - zoomExponent;
+    
+    return zoomLevel;
+}
+
 @end
