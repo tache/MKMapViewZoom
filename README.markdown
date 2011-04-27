@@ -5,10 +5,14 @@ http://troybrant.net/blog/2010/01/mkmapview-and-zoom-levels-a-visual-guide/
 If you have ever built a web application using the Google Maps API, you are likely intimately familiar with this line of code:
 
 map.setCenter(new google.maps.LatLng(37.4419, -122.1419), 13);
+To implement this you can use the attached category. 
 
+In your view controller where you declare MKMapView simply add
+#import "MKMapView+ZoomLevel.h" 
 
 
 # Example
+
 
 	MKCoordinateRegion region;
     CLLocationCoordinate2D c;
@@ -16,10 +20,6 @@ map.setCenter(new google.maps.LatLng(37.4419, -122.1419), 13);
     c.longitude = -122.1419;
     region.center = c;
     [mapView setCenterCoordinate:c zoomLevel:13 animated:YES];
-
-
-
-
 
 
 
