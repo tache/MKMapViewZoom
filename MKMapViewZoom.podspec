@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "MapViewZoomLevel"
+  s.name         = "MKMapViewZoom"
   s.version      = "1.0.0"
   s.summary      = "This pod provides a MKMapView category for setting the zoom level in a mapView."
 
