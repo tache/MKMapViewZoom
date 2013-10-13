@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MKMapViewZoom"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "This pod provides a MKMapView category for setting the zoom level in a mapView."
 
   s.homepage     = "http://troybrant.net/blog/2010/01/set-the-zoom-level-of-an-mkmapview/"
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.author       = 'Troy Brant'
 
-  s.source       = { :git => "https://github.com/UprightJoe/MKMapViewZoom.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/tache/MKMapViewZoom.git", :tag => spec.version.to_s }
   s.platform     = :ios
 
   s.source_files = '*.{h,m}'
