@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.author       = 'Troy Brant'
 
-  s.source       = { :git => "https://github.com/tache/MKMapViewZoom.git", :tag => spec.version.to_s }
+  s.source       = { :git => "https://github.com/tache/MKMapViewZoom.git", :tag => s.version.to_s }
   s.platform     = :ios
 
   s.source_files = '*.{h,m}'
